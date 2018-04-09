@@ -17,7 +17,7 @@ body {
 }
 .btn {
   display: block;
-  background-color: purple;
+  background-color: red;
   border: 1px solid black;
   border-radius: 5px;
   text-align: center;
@@ -33,7 +33,7 @@ body {
 section {
   min-height: 100vh;
 }
-p {
+h1 {
   background-color: hsla(0, 1%, 98%, 0.3);
   border-radius: 5px;
   font-family: 'Lobster', cursive;
@@ -157,7 +157,7 @@ label {
 }
 
 @media screen and (min-width: 360px) {
-  p, label, .quizQuestion, .feedback, .results {
+  h1, label, .quizQuestion, .feedback, .results {
     font-size: 1em;
   }
   .btn {
@@ -168,7 +168,7 @@ label {
   }
 }
 @media screen and (min-width: 660px) {
-  p, .quizQuestion, .feedback, .results {
+  h1, .quizQuestion, .feedback, .results {
     font-size: 1.5em;
   }
   .btn {
@@ -182,7 +182,7 @@ label {
   }
 }
 @media screen and (min-width: 760px) {
-  p, .quizQuestion, .feedback, .results {
+  h1, .quizQuestion, .feedback, .results {
     font-size: 1.8em;
   }
   .btn {
@@ -193,7 +193,7 @@ label {
   }
 }
 @media screen and (min-width: 1030px) {
-  p, .quizQuestion, .feedback, .results {
+  h1, .quizQuestion, .feedback, .results {
     font-size: 2em;
   }
   .btn {
