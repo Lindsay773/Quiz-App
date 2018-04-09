@@ -1,0 +1,208 @@
+body {
+  font-family: 'Roboto', Sans-Serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  min-height: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.startPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("https://hips.hearstapps.com/esq.h-cdn.co/assets/17/21/2048x1536/sd-aspect-1495660084-credit-bjorn-wallander-esq060117bestbars004.jpg?resize=980:*");
+  background-size: cover;
+  opacity: 0.9;
+}
+.btn {
+  display: block;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.startPage, .questionPage {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+section {
+  min-height: 100vh;
+}
+p {
+  background-color: hsla(0, 1%, 98%, 0.3);
+  border-radius: 5px;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  text-align: center;
+  padding: 0 5px;
+  margin: 0 auto;
+  color: red;
+  text-shadow: 1px 1px 2px #000000;
+}
+.display-none {
+  display: none;
+}
+.questionPage {
+  background-image: url("http://cmzone.vzbqbxhynotw9ion96xv.netdna-cdn.com/wp-content/uploads/2013/09/toxic-liquor.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+ul {
+  margin: 0;
+  padding-bottom:10px;
+  border-bottom: 1px solid black;
+  background-color: red;
+}
+li {
+  display: inline-block;
+  text-decoration: none;
+  padding-top:10px;
+}
+.scoreCount {
+  float: right;
+  padding-right: 30px;
+}
+.section, form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 1%, 98%, 0.3);
+  border-radius: 5px;
+}
+.quizQuestion, .feedback, .results {
+  font-family: 'Lobster', cursive;
+  color: red;
+  text-shadow: 1px 1px 2px #000000;
+  text-align: center;
+}
+fieldset {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: none;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+input:checked {
+  background-color: black;
+}
+input[type=radio] {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+label {
+  display: flex;
+  line-height: 20px;
+  margin: 5px 0;
+  padding: 20px;
+  background-color: hsla(0, 1%, 98%, 0.8);
+  color: black;
+  font-size: 1.5em;
+  cursor: pointer;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-align: left;
+}
+.submitAnswer {
+  width: 80%;
+  background-color: red;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor:pointer;
+  display: block;
+}
+.answerFeedback, .finalFeedbackPage, .questionForm {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.feedback, .results {
+  padding: 10px;
+}
+.results {
+  background-color: hsla(0, 1%, 98%, 0);
+}
+.correct-img, .incorrect-img, .final-img{
+  height: auto;
+  margin: 10px auto;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 360px) {
+  p, label, .quizQuestion, .feedback, .results {
+    font-size: 1em;
+  }
+  .btn {
+    width: 50%;
+  }
+  .correct-img, .final-img, .incorrect-img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 660px) {
+  p, .quizQuestion, .feedback, .results {
+    font-size: 1.5em;
+  }
+  .btn {
+    width: 30%;
+  }
+  label {
+    font-size: 1.2em;
+  }
+  .correct-img, .final-img, .incorrect-img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 760px) {
+  p, .quizQuestion, .feedback, .results {
+    font-size: 1.8em;
+  }
+  .btn {
+    width: 30%;
+  }
+  .correct-img, .final-img, .incorrect-img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1030px) {
+  p, .quizQuestion, .feedback, .results {
+    font-size: 2em;
+  }
+  .btn {
+    width: 15%;
+  }
+  .correct-img, .final-img, .incorrect-img {
+    width: 50%;
+  }
+}
+ 
+
+
